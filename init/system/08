@@ -1,0 +1,2 @@
+Le fichier dont les clefs RSA des machines autorisees sont sockes est :
+~/.ssh/authorized_key

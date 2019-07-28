@@ -1,0 +1,4 @@
+#!/bin/bash
+echo give me a name
+read name
+sudo userdel -rf $name

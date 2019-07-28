@@ -1,0 +1,3 @@
+Il faut changer le contenu du fichier "/etc/hostname" avec le nouveau <HOSTNAME>
+et puis il faut ajouter une autre ligne dans le ficher "/etc/hosts" tel que:
+127.0.1.1   <HOSTNAME>

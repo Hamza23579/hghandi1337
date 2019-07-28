@@ -1,0 +1,9 @@
+En session ssh:
+vous entrer la commande suivante : "su - username"
+apres une verification du mots de passe sera demande,
+vous tapez le mots de passe de cet utilisateur et apres vous etes connecte.
+En session graphique:
+vous vous deconnecter de votre session actuel,
+vous selectionner le nouveau utilisateur,
+apres vous taper le mots de passe de votre utilisateur,
+et apres vous etes connecte!!

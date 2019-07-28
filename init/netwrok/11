@@ -1,0 +1,2 @@
+le nom de la machine qui fait le lien entre le reseau local et l'exterieur est : nat et son adresse ip est : 10.21.1.1
+`cat 10` | grep nat

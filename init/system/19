@@ -1,0 +1,46 @@
+# systemctl list-unit-files --state=enabled
+
+UNIT FILE                                  STATE
+cups.path                                  enabled
+accounts-daemon.service                    enabled
+anacron.service                            enabled
+apache2.service                            enabled
+autovt@.service                            enabled
+avahi-daemon.service                       enabled
+bluetooth.service                          enabled
+console-setup.service                      enabled
+cron.service                               enabled
+cups-browsed.service                       enabled
+cups.service                               enabled
+dbus-org.bluez.service                     enabled
+dbus-org.freedesktop.Avahi.service         enabled
+dbus-org.freedesktop.ModemManager1.service enabled
+dbus-org.freedesktop.nm-dispatcher.service enabled
+getty@.service                             enabled
+keyboard-setup.service                     enabled
+minissdpd.service                          enabled
+ModemManager.service                       enabled
+network-manager.service                    enabled
+networking.service                         enabled
+NetworkManager-dispatcher.service          enabled
+NetworkManager-wait-online.service         enabled
+NetworkManager.service                     enabled
+pppd-dns.service                           enabled
+rsyslog.service                            enabled
+rtkit-daemon.service                       enabled
+ssh.service                                enabled
+sshd.service                               enabled
+syslog.service                             enabled
+systemd-timesyncd.service                  enabled
+unattended-upgrades.service                enabled
+avahi-daemon.socket                        enabled
+cups.socket                                enabled
+remote-fs.target                           enabled
+anacron.timer                              enabled
+apt-daily-upgrade.timer                    enabled
+apt-daily.timer                            enabled
+
+38 unit files listed.
+You have new mail in /var/mail/hghandi
+
+# leurs nom est : daemon

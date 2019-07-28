@@ -1,0 +1,6 @@
+le service qui permet de lancer des taches a horaire regulieres est cron, la commande est crontab.
+le path de cron est /etc/init.d/cron
+pour activer cron : /etc/init.d/cron start
+pour desactiver cron : /etc/init.d/cron stop
+crontab -e
+minutes heurs jours_du_mois mois jour_de_la_semaine.

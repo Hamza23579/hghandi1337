@@ -1,0 +1,80 @@
+#!/bin/bash
+
+spinner=( '0oooo' 'o0ooo' 'oo0oo' 'ooo0o' 'oooo0' )
+
+users=$( cat /etc/passwd | cut -d: -f1 )
+
+speed=10
+
+writing(){
+clear
+echo "all the users are here : "
+echo -n $users | pv -qL $speed
+}
+
+quit=1
+
+chooser(){
+echo "choose an operation to do :"
+echo "1- delete a user"
+echo "2- add a user"
+echo "3- change password"
+echo "4- show all users "
+echo "5- change speed of showing users"
+echo "6- do some animations"
+echo "7- kill animation"
+echo "8- Exit"
+        read c
+        case $c in
+        1)echo "give me a name!"
+                read name
+                sudo userdel -rf $name
+                ;;
+        2)echo "What's gonna be he's name ?"
+                read newuser
+                sudo useradd $newuser
+                echo "user was created successfully"
+                ;;
+        3)echo "to whom you wanna change the password ?"
+                read user_ch
+                sudo passwd $user_ch
+                ;;
+        4) writing
+                ;;
+        5)echo "Enter a value >= 10"
+                read speed2
+                speed=$speed2
+                echo $speed
+                echo "speed changed ^_^"
+                ;;
+        6)spin &
+                pid=$!
+                ;;
+        7)kill -9 $pid
+                ;;
+        8)echo "Oh you're quiting already "
+                sleep 0.5
+                echo "bye bye then !"
+                quit=0
+                ;;
+        *)echo "bad option !"
+                ;;
+        esac
+
+}
+
+spin(){
+clear
+while [ 1 ]
+do
+        for i in "${spinner[@]}"
+        do
+                echo -ne "\r$i"
+                sleep 0.2
+        done
+done
+}
+while [ $quit -eq 1 ]
+do
+        chooser
+done
